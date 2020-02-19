@@ -1,0 +1,8 @@
+<h1>Add Review</h1>
+<div class="container">
+    <%= simple_form_for @review, :url => restaurant_reviews do |f| %>
+        <%= f.input :content, label: "Enter your review" %>
+        <%= f.input :rating, label: "Please rate the place!", placeholder: "0-5"%>
+        <%= f.submit %>
+      <% end %>
+</div>

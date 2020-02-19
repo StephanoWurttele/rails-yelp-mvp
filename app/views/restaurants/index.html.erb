@@ -1,0 +1,7 @@
+<h1>Restaurants</h1>
+
+<% @restaurants.each do |restaurant| %>
+    <h3><%= link_to restaurant.name, restaurant_url(restaurant.id) %></h3>
+    <p><%= restaurant.address %></p>
+    <p><%= restaurant.phone_number %></p>
+<% end %>
